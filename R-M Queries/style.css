@@ -90,7 +90,7 @@ input:focus {
   color: hsl(246, 25%, 77%);
   text-align: center;
   justify-content: center;
-  padding: 5px;
+  font-size: 12px;
 }
 span {
   color: hsl(0, 100%, 74%);
@@ -100,10 +100,9 @@ span {
   display: flex;
   justify-content: flex-end;
 }
-@media screen and (min-width: 375px) and (max-width: 1440) {
-  body {
-    width: 100%;
-    display: flex;
+@media screen and (max-width: 375px) {
+  main {
     flex-direction: column;
+    width: 80%;
   }
 }
