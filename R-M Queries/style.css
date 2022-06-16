@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(bg-intro-desktop.png);
+  background-color: hsl(0, 100%, 74%);
+  font-size: 16px;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+main {
+  width: 70%;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+main .writeup .frm {
+  padding: 3em;
+}
+.writeup {
+  flex: 50%;
+  color: white;
+  margin: 80px;
+}
+.writeup h1 {
+  font-size: 3em;
+  padding-bottom: 20px;
+  line-height: 45px;
+}
+.frm {
+  flex: 50%;
+  color: hsl(249, 10%, 26%);
+}
+.heading {
+  color: hsl(246, 25%, 77%);
+  background-color: hsl(248, 32%, 49%);
+  text-align: center;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+  margin-top: 40px;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3);
+}
+.b {
+  color: white;
+}
+.form {
+  padding: 25px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 7px 7px rgba(0, 0, 0, 0.3);
+}
+#input {
+  margin-bottom: 15px;
+  display: block;
+  border-radius: 5px;
+  border: 2px solid hsl(248, 32%, 49%);
+  width: 100%;
+  padding: 14px 28px;
+  font-size: 16px;
+  text-align: left;
+  justify-content: center;
+}
+input:focus {
+  outline: none;
+  border: 2px solid hsl(248, 32%, 49%);
+}
+::placeholder {
+  color: hsl(248, 32%, 49%);
+}
+.btn {
+  background-color: hsl(154, 59%, 51%);
+  color: hsl(246, 25%, 77%);
+  margin-bottom: 15px;
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.form p {
+  color: hsl(246, 25%, 77%);
+  text-align: center;
+  justify-content: center;
+  padding: 5px;
+}
+span {
+  color: hsl(0, 100%, 74%);
+}
+#error {
+  color: hsl(0, 100%, 74%);
+  display: flex;
+  justify-content: flex-end;
+}
+@media screen and (min-width: 375px) and (max-width: 1440) {
+  body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
